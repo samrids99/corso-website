@@ -9,6 +9,15 @@
     background-size: cover;
 }
 
+.invitation-bg {
+    background: linear-gradient(
+        to bottom right,
+        rgba(0,0,0,0.8),
+        rgba(0,0,0,0.8)),
+        url('../images/invitation-background.jpg') no-repeat center center;
+    background-size: cover;
+}
+
 .header .slide {
     width: 90%;
     margin: auto;
@@ -17,6 +26,24 @@
 @media(max-width: 992px) {
     .navbar {
         background: var(--bs-dark); // legible menu on smaller screens
+    }
+
+    .header {
+        height: 800px !important;
+        min-height: 800px !important;
+    }
+
+    .register {
+        padding: 40px !important;
+    }
+
+    .register h2 {
+        text-align: center !important;
+    }
+
+    .course-summary {
+        width: 90% !important;
+        margin-top: 0 !important;
     }
 }
 
